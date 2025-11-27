@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    <!-- For Creating the objects-->
+    <bean id="cash" class="paymentExample.Beans.Cash"> </bean>
+    <bean id="debit" class="paymentExample.Beans.DebitCard" ></bean>
+    
+    <!--<bean id="debit" class="paymentExample.Beans.DebitCard" primary="true"></bean>--> <!--ByType-->
+   
+   
+    <!--<bean id="p" class="paymentExample.Beans.CreditCard"></bean>--> <!--It is used for forName and constructor -->
+   <!-- <bean id="debit" class="paymentExample.Beans.DebitCard" autowire-candidate="false"></bean>--><!-- autowire-candidate="false for byType-->
+    
+	<!-- <bean id="shopping" class="paymentExample.Beans.Shopping" autowire="byName"> </bean>-->
+	<!--<bean id="shopping" class="paymentExample.Beans.Shopping" autowire="byType"> </bean>-->
+	<!--<bean id="shopping" class="paymentExample.Beans.Shopping" autowire="constructor"></bean>-->
+	
+</beans>
