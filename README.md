@@ -108,7 +108,7 @@ IoC is a principle which is used to manage and collaborate dependencies among th
 | Managing | Creating the object and maintaining it. |
 | Collaborate | Injecting the objects. |
 
-  
+  ```
                 +----------------------+
                 |   Configuration      |
                 | (XML / Annotations)  |
@@ -119,7 +119,7 @@ IoC is a principle which is used to manage and collaborate dependencies among th
 |  Java Classes  | --> |    IoC    | --> | Spring Beans   |
 +----------------+     +-----------+     +----------------+
 
-
+```
 Spring IoC is responsible for Dependency Injection. It uses Java classes and Configuration (XML/annotations).
 
 *Spring Beans* 
